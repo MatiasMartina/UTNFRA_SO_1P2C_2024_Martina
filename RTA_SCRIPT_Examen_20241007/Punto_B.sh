@@ -91,15 +91,17 @@ echo
 # <dispositivo> <dir> <tipo>   <opciones> <dump> <fsck>
 
 echo "/dev/${DISCO}1 /Examenes-UTN/alumno_1/parcial_1 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}2 /Examenes-UTN/alumno_1/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}5 /Examenes-UTN/alumno_1/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}6 /Examenes-UTN/alumno_2/parcial_1 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}7 /Examenes-UTN/alumno_2/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}8 /Examenes-UTN/alumno_2/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}9 /Examenes-UTN/alumno_3/parcial_1 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}10 /Examenes-UTN/alumno_3/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}11 /Examenes-UTN/alumno_3/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
-echo "/dev/${DISCO}12 /Examenes-UTN/profesores ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}5 /Examenes-UTN/alumno_1/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}6 /Examenes-UTN/alumno_1/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}7 /Examenes-UTN/alumno_2/parcial_1 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}8 /Examenes-UTN/alumno_2/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}9 /Examenes-UTN/alumno_2/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}10 /Examenes-UTN/alumno_3/parcial_1 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}11 /Examenes-UTN/alumno_3/parcial_2 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}12 /Examenes-UTN/alumno_3/parcial_3 ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/${DISCO}13 /Examenes-UTN/profesores ext4 defaults 0 0" | sudo tee -a /etc/fstab
+
+sudo mount -a
 
 df -h | grep -i "$DISCO" | awk '{printf("Filesystem: %s - Mounted on: %s \n",$1,$6)}'
 
