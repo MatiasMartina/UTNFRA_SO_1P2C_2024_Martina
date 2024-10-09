@@ -1,7 +1,7 @@
 #PERMISOS
 #
 #CARPETA,DUEÑO,GRUPO,PERMISO
-/Examenes-UTN/alumno_1,p1c2_2024_A1,p1c2_2024_A1,777
-/Examenes-UTN/alumno_2,p1c2_2024_A2,p1c2_2024_A2,777
-/Examenes-UTN/alumno_3,p1c2_2024_A3,p1c2_2024_A3,777
-/Examenes-UTN/profesores,p1c2_2024_P1,p1c2_2024_gProfesores,777
+/Examenes-UTN/alumno_1,p1c2_2024_A1,p1c2_2024_A1,750
+/Examenes-UTN/alumno_2,p1c2_2024_A2,p1c2_2024_A2,760
+/Examenes-UTN/alumno_3,p1c2_2024_A3,p1c2_2024_A3,700
+/Examenes-UTN/profesores,p1c2_2024_P1,p1c2_2024_gProfesores,775
