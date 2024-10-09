@@ -6,6 +6,7 @@
 
 LISTA=$1
 USER_HASH=$2
+LISTA_PERMISOS=$3
 HASH=$(sudo grep -i $USER_HASH /etc/shadow | awk -F ':' '{print $2}' )
 #echo "$HASH"
 #exit 1
@@ -26,7 +27,7 @@ do
 	
 	if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
    		
-		echo "sudo groupadd $GRUPO"
+		echo sudo groupadd $GRUPO
  		
 		echo "grupo $GRUPO creado"
 	else
@@ -36,7 +37,7 @@ do
 	if [ $(grep "$USUARIO" /etc/passwd -c) -eq 0 ]; then
 
 	
-		echo "sudo useradd -m -p "$HASH" -s /bin/bash -G $GRUPO $USUARIO"
+		sudo useradd -m -p "$HASH" -s /bin/bash -G $GRUPO $USUARIO
 		echo "----------------------------------------------"
 	else	
 		echo "el usuario $USUARIO ya existe"
