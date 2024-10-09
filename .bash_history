@@ -1011,3 +1011,146 @@ git push
 git status
 ls -la
 history -a
+ssh-keygen -t ed25519
+ls -la .ssh/
+cat .ssh/id_ed25519.pub 
+~/.bashrc && history -a
+sudo ~/.bashrc && history -a
+.bashrc
+mkdir repogit
+ls -la
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone git@github.com:MatiasMartina/UTNFRA_SO_1P2C_2024_Martina.git
+ls -la
+rm -rf UTN-FRA_SO_Examenes/
+rm -rf UTNFRA_SO_1P2C_2024_Martina/
+ls -la
+cd repogit/
+ls -la
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone git@github.com:MatiasMartina/UTNFRA_SO_1P2C_2024_Martina.git
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+echp $?
+echo $?
+~/.bashrc && history -a
+ls -la
+cd ..
+~/.bashrc && history -a
+ls -la
+cd repogit/UTN-FRA_SO_Examenes/202410
+ls -la
+bash script_Precondicion.sh 
+source  ~/.bashrc  && history -a
+cd ../..
+ls -la
+cd UTNFRA_SO_1P2C_2024_Martina/
+ls -la
+rm -rf RTA_ARCHIVOS_Examen_20241009
+rm -rf RTA_SCRIPT_Examen_20241009
+ls -la
+ls -la RTA_ARCHIVOS_Examen_20241008/
+RTA_SCRIPT_Examen_20241007/
+ls -la
+cd RTA_SCRIPT_Examen_20241007/
+ls -la
+cat Punto_F.sh 
+vim Punto_F.sh 
+sudo fdisk -l
+sudo fdisk /dev/sdc -l
+sudo fdisk /dev/sdc 
+sudo fdisk /dev/sdc -l
+lsblk -f /dev/sdc
+git status
+ls -la
+cat Punto_D.sh 
+ls -la/
+ls -la /
+ls -la
+bash Punto_A.sh 
+ls -la /
+rm -rf /Examenes-UTN/
+sudo rm -rf /Examenes-UTN/
+ls -la /
+sudo apt update
+sudo apt install git -y
+sudo apt install tree -y
+bash Punto_A.sh 
+cat Punto_B.sh 
+cat Punto_C.sh 
+LS -LA /
+ls -la /
+history
+sudo rm -rf /Examenes-UTN/
+ls -la /
+bash Punto_A.sh 
+bash Punto_B.sh sdc
+bash Punto_C.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+bash Punto_D.sh
+bash Punto_E.sh
+cat Punto_E.sh
+vim Punto_E.sh
+vim Punto_F.sh
+bash Punto_E.sh
+bash Punto_F.sh
+vim Punto_F.sh
+vim Punto_E.sh
+bash Punto_E.sh
+bash Punto_F.sh
+vim Punto_F.sh
+bash Punto_F.sh
+vim Punto_F.sh
+bash Punto_E.sh
+vim Punto_E.sh
+bash Punto_E.sh
+vim Punto_E.sh
+bash Punto_E.sh
+vim Punto_E.sh
+bash Punto_E.sh
+vim Punto_E.sh
+bash Punto_E.sh
+vim Punto_F.sh
+bash Punto_F.sh
+vim Punto_D.sh
+cd 
+ls -la
+rm -rf Estructura_Asimetrica/
+ls -la
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+bash Punto_D.sh
+vim Punto_D.sh
+ls -la /home/vagrant/
+rm -rf /home/vagrant/Estructura_Asimetrica/
+vim Punto_D.sh
+bash Punto_D.sh
+vim Punto_D.sh
+rm -rf /home/vagrant/Estructura_Asimetrica/
+ls -la /home/vagrant/
+bash Punto_D.sh
+rm -rf /home/vagrant/Estructura_Asimetrica/
+ls -la /home/vagrant/
+vim Punto_D.sh
+bash Punto_D.sh
+git status
+git add .
+git commit -m "ADD: Incluyo Filtro.Avanzado.txt olvidé de generar el archivo"
+git config --global user.name "MatiasMartina"
+git status
+git commit -m "fix: Punto_D.sh - Se agregó una ultima linea que no habia visto en la consigna "
+git push
+cd ..
+git status
+add .
+git add .
+git status
+git commit -m "ADD: Filtro_Avanzado.txt - Se carga archivo (Olvidé generarlo ayer)"
+git status
+git push
+history -a
+cat ~/bash.history
+cd 
+ls -la
+cat .bash_history 
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/
+ls -la
