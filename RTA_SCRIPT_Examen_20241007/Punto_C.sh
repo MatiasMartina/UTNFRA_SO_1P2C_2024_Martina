@@ -1,22 +1,18 @@
 #!/bin/bash
 
-
-
-
-
 LISTA=$1
 USER_HASH=$2
 
 
 HASH=$(sudo grep -i $USER_HASH /etc/shadow | awk -F ':' '{print $2}' )
-#echo "$HASH"
-#exit 1
+
 ANT_IFS=$IFS
 
 IFS=$'\n' #Caracter que usa el for para dar cada vuelta
 
 
-
+echo
+echo "------------------------------"
 
 for LINEA in `cat $LISTA |  grep -v ^#` 
 
@@ -24,7 +20,7 @@ do
 	echo "Linea: $LINEA"
 	echo
 	USUARIO=$(echo  $LINEA |awk -F ',' '{print $1}')
-	GRUPO=$(echo  $LINEA |awk -F ',' '{print $2}')
+	GRUPO=$(echo  $LINEA |awk -F I',' '{print $2}')
 	
 	if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
    		
@@ -54,10 +50,25 @@ LISTA_USUARIOS_CARPETAS=$4
 
 IFS=$'\n'
 
+
+echo
+echo "CAMBIO PERMISOS A /Examenes-UTN/ a 777"
+echo "permisos antes:"
+ls -ld /Examenes-UTN
+sudo chmod 777 /Examenes-UTN/
+echo
+echo "--------------------------"
+echo "permisos actuales"
+ls -ld /Examenes-UTN/
+
 #alumno1,/Examenes-UTN/alumno_1
 #alumno2,/Examenes-UTN/alumno_2
 #alumno3,/Examenes-UTN/alumno_3
 #profesores,/Examenes-UTN/profesores
+        echo "--------------------"
+	echo
+	echo "WHOAMI"
+	echo "--------------------"
 
 for LINEA in `cat "$LISTA_USUARIOS_CARPETAS" | grep -v ^#`
 do
@@ -77,7 +88,9 @@ do
 	echo "--------------------"
 done
 
-
+echo
+echo "PERMISOS - PROPIETARIOS"
+echo "-------------------------"
 
 
 for LINEA_PERMISO in `cat $PERMISO_LISTA | grep -v ^#`
