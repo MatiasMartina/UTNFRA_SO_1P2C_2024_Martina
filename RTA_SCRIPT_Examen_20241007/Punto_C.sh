@@ -27,7 +27,7 @@ do
 	
 	if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
    		
-		echo sudo groupadd $GRUPO
+		sudo groupadd $GRUPO
  		
 		echo "grupo $GRUPO creado"
 	else
