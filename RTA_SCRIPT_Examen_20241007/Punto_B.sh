@@ -50,13 +50,13 @@ EOF
 
 echo
 echo "muestra particionamiento"
-echo
+echo "----------------------------"
 
 sudo fdisk /dev/$DISCO -l
-
-
-
-sudo mkfs.ext4 /dev/${DISCO}1
+echo 
+echo "----------------------------"
+echo 
+sudoo mkfs.ext4 /dev/${DISCO}1
 sudo mkfs.ext4 /dev/${DISCO}5
 sudo mkfs.ext4 /dev/${DISCO}6
 sudo mkfs.ext4 /dev/${DISCO}7
@@ -68,9 +68,10 @@ sudo mkfs.ext4 /dev/${DISCO}12
 sudo mkfs.ext4 /dev/${DISCO}13
 
 
-echo
+echo 
 echo "formateo a ext4"
 echo
+
 sudo lsblk /dev/$DISCO -f | grep -i "$DISCO" | awk '{printf("Disco %s: Formato: %s \n",$1,$2)}' | tail -n +2
 
 #├─sdc1  175bb664-447f-42e6-8078-5b34bdc5f5c9
@@ -84,6 +85,7 @@ sudo lsblk /dev/$DISCO -f | grep -i "$DISCO" | awk '{printf("Disco %s: Formato: 
 #├─sdc11 fc1d1385-f276-4cd1-bf2d-6cf7843a3f64
 #├─sdc12 a02c1e9e-ffa2-4124-9396-b20b7abbee8e
 #└─sdc13 895bd435-5a16-4870-966e-b283ce4dbad3
+echo "--------------------------"
 echo
 echo "Montaje persistente"
 echo
@@ -102,7 +104,10 @@ echo "/dev/${DISCO}12 /Examenes-UTN/alumno_3/parcial_3 ext4 defaults 0 0" | sudo
 echo "/dev/${DISCO}13 /Examenes-UTN/profesores ext4 defaults 0 0" | sudo tee -a /etc/fstab
 
 sudo mount -a
+echo
+
+
 
 df -h | grep -i "$DISCO" | awk '{printf("Filesystem: %s - Mounted on: %s \n",$1,$6)}'
-
-
+echo
+echo "---------------------------"
