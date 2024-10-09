@@ -56,7 +56,7 @@ sudo fdisk /dev/$DISCO -l
 echo 
 echo "----------------------------"
 echo 
-sudoo mkfs.ext4 /dev/${DISCO}1
+sudo mkfs.ext4 /dev/${DISCO}1
 sudo mkfs.ext4 /dev/${DISCO}5
 sudo mkfs.ext4 /dev/${DISCO}6
 sudo mkfs.ext4 /dev/${DISCO}7
