@@ -23,7 +23,7 @@ do
 	#DIRECTORIO,USUARIO
 	echo "directorios creados"
 	#sudo su -c "whoami" > ./probando.txt p1c2_2024_A1
-	sudo su -c "whoami" > $DIRECTORIO/validar.txt $USUARIO
+	sudo su -c "whoami" > "$DIRECTORIO"/validar.txt $USUARIO
 done
 
 
