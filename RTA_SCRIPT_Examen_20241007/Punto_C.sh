@@ -20,7 +20,7 @@ do
 	echo "Linea: $LINEA"
 	echo
 	USUARIO=$(echo  $LINEA |awk -F ',' '{print $1}')
-	GRUPO=$(echo  $LINEA |awk -F I',' '{print $2}')
+	GRUPO=$(echo  $LINEA |awk -F ',' '{print $2}')
 	
 	if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
    		
