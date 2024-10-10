@@ -1,7 +1,7 @@
 #Usuario,Directorio
 
-p1c2_2024_A1,/Examenes-UTN/alumno_1
-p1c2_2024_A2,/Examenes-UTN/alumno_2
-p1c2_2024_A3,/Examenes-UTN/alumno_3
-p1c2_2024_P1,/Examenes-UTN/profesores
+/Examenes-UTN/alumno_1,p1c2_2024_A1
+/Examenes-UTN/alumno_2,p1c2_2024_A2
+/Examenes-UTN/alumno_3,p1c2_2024_A3
+/Examenes-UTN/profesores,p1c2_2024_P1
 
