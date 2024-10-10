@@ -317,3 +317,328 @@ sudo rm -rf history-backup.tgz
 ls -la
 cd ../..
 ls 
+ssh-keygen -t ed25529
+ssh-keygen -t ed25519
+mkdir repogit
+cd repogit/
+cat ~/.ssh/id_ed25519.pub
+git clone git@github.com:MatiasMartina/UTNFRA_SO_1P2C_2024_Martina.git
+ls -la
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+cd UTNFRA_SO_1P2C_2024_Martina/
+ls -la
+cd ..
+ls -la
+cd UTN-FRA_SO_Examenes/
+ls -la
+cd 202410/
+ls -la
+bash script_Precondicion.sh 
+cd ..
+ls -la
+cd ..
+ls -la
+cd UTNFRA_SO_1P2C_2024_Martina/
+ls -la
+rm -rf RTA_SCRIPT_Examen_20241009
+rm -rf RTA_ARCHIVOS_Examen_20241009
+ls -la
+sudo apt update
+sudo apt install git -y
+sudo apt install tree -y
+git status
+ls -la
+ls -la RTA_ARCHIVOS_Examen_20241008/
+cd RTA_SCRIPT_Examen_20241007/
+ls -la
+bash Punto_A.sh 
+bash Punto_B.sh sdc 
+sudo lsblk /dev/$DISCO -f | grep -i "$DISCO" | awk '{printf("Disco %s: Formato: %s \n",$1,$2)}' | tail -n +2
+sudo lsblk /dev/sdc -f
+sudo blkid
+sudo mkfs.ext4 /dev/sdc2
+sudo lsblk /dev/sdc -f
+sudo mkfs.ext4 /dev/sdc6
+bash Punto_B.sh sdc 
+bash Punto_C.sh sdc ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt
+ls -la /
+cd E
+cd /Examenes-UTN/
+ls -la
+bash Punto_C.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt
+cd ..
+cd ~
+LS -LA
+ls -la
+cd repogit/
+cd UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+bash Punto_C.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt
+grep -i "p1c2" /etc/passwd
+cat /etc/passwd
+ls -la
+vim Punto_C.sh 
+vim Punto_C1.sh 
+bash Punto_C1.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant 
+cat /etc/group
+vim Punto_C1.sh 
+bash Punto_C1.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant 
+cat /etc/group
+bash Punto_C1.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant 
+vim Punto_C1.sh 
+bash Punto_C1.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant 
+vim Punto_C1.sh 
+bash Punto_C1.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant 
+grep -i "p1c1" /etc/group
+grep -i "p1c1" /etc/passwd
+sudo grep -i "p1c1" /etc/passwd
+cat /etc/passwd
+grep -i "p1c2" /etc/passwd
+grep -i "p1c2" /etc/group
+vim Punto_C.sh 
+ls -la
+rm -rf Punto_C.sh 
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+vim Punto_C1.sh 
+vim Punto_C.sh 
+git add status
+cd ..
+git status
+git add .
+git commit -m "ADD: Punto_C1.sh para detectar un error"
+git push
+ls -la
+cd RTA_SCRIPT_Examen_20241007/
+ls -la
+vim Punto_C.sh 
+vim Punto_C2.sh 
+bash Punto_C2.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C2.sh 
+bash Punto_C2.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C2.sh 
+bash Punto_C2.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C2.sh 
+bash Punto_C2.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C2.sh 
+cp Punto_C2. sh Punto_C2bis
+cp Punto_C2. sh Punto_C2bis.sh
+cp Punto_C2.sh Punto_C2bis.sh
+ls -la
+vim Punto_C2bis.sh
+bash Punto_C2bis.sh.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+ls -la /Examenes-UTN/
+vim Punto_C2bis.sh
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+vim Punto_C2bis.sh
+sudo su -c "whoami" > /Examenes-UTN/alumno_1/probando.txt p1c2_2024_A1
+ls -ld /Examenes-UTN/
+ls -l /Examenes-UTN/
+sudo su -c "whoami" p1c2_2024_A1 > /Examenes-UTN/alumno_1/probando.txt
+ls -l /
+sudo su -c "whoami" p1c2_2024_A1 > /Examenes-UTN/alumno_1/probando.txt
+ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_1
+sudo su -c "whoami" p1c2_2024_A1 > /Examenes-UTN/alumno_1/probando.txt p1c2_2024_A1
+sudo su -c "whoami"  > /Examenes-UTN/alumno_1/probando.txt 
+sudo su -c "whoami  > /Examenes-UTN/alumno_1/probando.txt p1c2_2024_A1"
+sudo ls -l /Examenes-UTN/alumno_1
+vim Punto_C2bis.sh
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+sudo ls -l /Examenes-UTN/alumno_2
+sudo ls -l /Examenes-UTN/alumno_3
+sudo ls -l /Examenes-UTN/profesores
+vim Punto_C2bis.sh
+cat /Examenes-UTN/profesores/validar.txt
+sudo cat /Examenes-UTN/profesores/validar.txt
+cd ..
+cd /Examenes-UTN/
+cd profesores
+ls -la
+cat validar.txt
+vim validar.txt
+sudo ls -l /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_1/validar.txt
+cd ..
+ls -l
+rm -rf alumno_1/validar.txt
+sudo rm -rf alumno_1/validar.txt
+sudo ls -l alumno_1/
+cat probando.txt
+cd alumno_1
+sudo cd alumno_1
+cat /alumno_1/probando.txt
+vim Punto_C2bis.sh
+ls -la
+rm -rf Punto_C2bis.sh 
+sudo cat alumno_1/probando.txt
+sudo ls -la alumno_1
+sudo rm -rf ./alumno_1/probando.txt
+sudo ls -la alumno_1
+sudo ls -la alumno_2
+sudo rm -rf ./alumno_2/validar.txt
+sudo ls -la alumno_3
+sudo rm -rf ./alumno_3/probando.txt
+sudo ls -la alumno_3
+sudo rm -rf ./alumno_3/validar.txt
+sudo ls -la alumno_3
+sudo ls -la profesores/
+sudo rm -rf /Examenes-UTN/profesores/validar.txt 
+ls -la /Examenes-UTN/profesores/
+ls -la
+cd 
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+vim Punto_C2bis.sh 
+ls -l /Examenes-UTN/
+ls ls -d /Examenes-UTN/
+ls -d /Examenes-UTN/
+ls -Ld /Examenes-UTN/
+ls -ld /Examenes-UTN/
+ls -l /Examenes-UTN/
+sudo ls -l /Examenes-UTN/alumno_1/validar.txt
+sudo su -c "whoami  > /Examenes-UTN/alumno_1/probando.txt p1c2_2024_A1"
+sudo ls -l /Examenes-UTN/alumno_1/validar.txt
+sudo su -c "whoami"  > /Examenes-UTN/alumno_1/probando.txt p1c2_2024_A1
+sudo ls -l /Examenes-UTN/alumno_1/validar.txt
+vim Punto_C2bis.sh 
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+sudo ls -l /Examenes-UTN/alumno_1/validar.txt
+cd /Examenes-UTN/alumno_1/validar.txt
+sudo cd /Examenes-UTN/alumno_1/validar.txt
+cd
+cd /
+cd Examenes-UTN/
+sudo cat ./alumno_1/validar.txt
+vim Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt 
+ls -la
+cd ..
+cd home/vagrant/repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+LS -LA
+ls -la
+vim Punto_C2bis.sh 
+cd /
+cd /Examenes-UTN/
+sudo ls -la alumno_1
+rm -rf alumno_1/validar.txt
+sudo rm -rf alumno_1/validar.txt
+sudo rm -rf alumno_1/probando.txt
+sudo ls -la alumno_1/
+sudo rm -rf alumno_2/probando.txt
+sudo rm -rf alumno_2/validar.txt
+sudo ls -la alumno_2
+sudo ls -la alumno_3
+sudo rm -rf alumno_3
+sudo rm -rf alumno_3/validar.txt
+sudo ls -la alumno_3/
+cd home/vagrant/repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+cd ..
+~
+cd ~
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+vim Punto_C1
+ls -la
+vim Punto_C2bis.sh 
+vim Punto_C2bis.sh 
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt  ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+sudo -ls -la /Examenes-UTN/alumno_1/
+sudo -ls -l /Examenes-UTN/alumno_1/
+vim Punto_C2bis.sh 
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt  ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+sudo ls -la /Examenes-UTN/
+sudo ls -la /Examenes-UTN/alumno_1/
+vim Punto_C2bis.sh 
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+vim Punto_C2bis.sh 
+bash Punto_C2bis.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt  ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C2bis.sh 
+vim Punto_C3.sh 
+vim Punto_C2bis.sh 
+vim Punto_C3.sh 
+vim Punto_C2bis.sh 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh 
+sudo ls -la /Examenes-UTN/alumno_1/
+bash Punto_C3.sh 
+vim Punto_C3.sh 
+bash Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+vim ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+sudo ls -la /Examenes-UTN/alumno_1/
+sudo ls -la /Examenes-UTN/alumno_2/
+sudo ls -la /Examenes-UTN/alumno_3/
+sudo rm -rf /Examenes-UTN/alumno_3/validar.txt
+sudo rm -rf /Examenes-UTN/alumno_2/validar.txt
+sudo rm -rf /Examenes-UTN/alumno_1/validar.txt
+sudo rm -rf /Examenes-UTN/profesores/validar.txt
+sudo ls -la /Examenes-UTN/alumno_3/
+sudo ls -la /Examenes-UTN/alumno_1/
+sudo ls -la /Examenes-UTN/alumno_2/
+sudo ls -la /Examenes-UTN/alumno_3/
+sudo ls -la /Examenes-UTN/profesores/
+pwd
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+sudo ls -la /Examenes-UTN/profesores/
+sudo ls -la /Examenes-UTN/alumno_3/
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+bash Punto_C3.sh ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+vim Punto_C3.sh 
+ls -la
+vim Punto_C1.sh 
+vim Punto_C2.sh 
+vim Punto_C3.sh 
+sudo rm -rf /Examenes-UTN/alumno_1/validar.txt
+sudo rm -rf /Examenes-UTN/alumno_2/validar.txt
+sudo rm -rf /Examenes-UTN/alumno_3/validar.txt
+sudo rm -rf /Examenes-UTN/profesores/validar.txt
+sudo ls -la /Examenes-UTN/profesores/validar.txt
+sudo ls -la /Examenes-UTN/profesores/
+sudo ls -la /Examenes-UTN/alumno_1/
+sudo ls -la /Examenes-UTN/alumno_2/
+sudo ls -la /Examenes-UTN/alumno_3/
+ls -la
+vim Punto_C_Def.sh
+bash Punto_C_Def.sh  ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant  ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+git status
+git add .
+git status
+git commit -m "ADD: Punto_C2.sh Punto_C2bis.sh Punto_C3.sh Punto_C_Def.sh todo concatenado"
+git push
+ls -la
