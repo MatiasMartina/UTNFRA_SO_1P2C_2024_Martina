@@ -14,38 +14,39 @@ IFS=$'\n' #Caracter que usa el for para dar cada vuelta
 echo
 echo "------------------------------"
 
-for LINEA in `cat $LISTA |  grep -v ^#` 
+for LINEA in `cat $LISTA |  grep -v ^#`
 
 do
-	echo "Linea: $LINEA"
-	echo
-	USUARIO=$(echo  $LINEA |awk -F ',' '{print $1}')
-	GRUPO=$(echo  $LINEA |awk -F ',' '{print $2}')
-	
-	if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
-   		
-		sudo groupadd $GRUPO
- 		
-		echo "grupo $GRUPO creado"
-	else
-	    echo "el grupo $GRUPO ya existe"
-	fi
-	
-	if [ $(grep "$USUARIO" /etc/passwd -c) -eq 0 ]; then
+        echo "Linea: $LINEA"
+        echo
+        USUARIO=$(echo  $LINEA |awk -F ',' '{print $1}')
+        GRUPO=$(echo  $LINEA |awk -F ',' '{print $2}')
 
-	
-		sudo useradd -m -p "$HASH" -s /bin/bash -G $GRUPO $USUARIO
-		echo "----------------------------------------------"
-	else	
-		echo "el usuario $USUARIO ya existe"
-	fi
+        if [ $(grep "$GRUPO:" /etc/group -c) -eq 0 ]; then
+
+                sudo groupadd $GRUPO
+
+                echo "grupo $GRUPO creado"
+        else
+            echo "el grupo $GRUPO ya existe"
+        fi
+
+        if [ $(grep "$USUARIO" /etc/passwd -c) -eq 0 ]; then
+
+
+                sudo useradd -m -p "$HASH" -s /bin/bash -G $GRUPO $USUARIO
+                echo "----------------------------------------------"
+        else
+                echo "el usuario $USUARIO ya existe"
+        fi
 done
 IFS=$ANT_IFS
 
 
+
 PERMISO_LISTA=$3
 #CARPETA,DUEÑO,GRUPO,PERMISOS
-LISTA_USUARIOS_CARPETAS=$4
+
 
 
 IFS=$'\n'
@@ -65,28 +66,6 @@ ls -ld /Examenes-UTN/
 #alumno2,/Examenes-UTN/alumno_2
 #alumno3,/Examenes-UTN/alumno_3
 #profesores,/Examenes-UTN/profesores
-        echo "--------------------"
-	echo
-	echo "WHOAMI"
-	echo "--------------------"
-
-for LINEA in `cat "$LISTA_USUARIOS_CARPETAS" | grep -v ^#`
-do
-        echo
-	echo "Linea: $LINEA"
-        USUARIO=$(echo $LINEA | awk -F ',' '{print $1}')
-        DIRECTORIO=$(echo $LINEA | awk -F ',' '{print $2}')
-
-        echo
-        echo "--------------------"
-        echo
-
-        #DIRECTORIO,USUARIO
-        echo "directorios creados"
-        #sudo su -c "whoami" > ./probando.txt p1c2_2024_A1
-        sudo su -c "whoami" > "$DIRECTORIO"/validar.txt $USUARIO
-	echo "--------------------"
-done
 
 echo
 echo "PERMISOS - PROPIETARIOS"
@@ -111,18 +90,49 @@ do
         echo "Permisos asignados a $DIRECTORIO"
         echo
   done
+IFS=$ANT_IFS
+
+LISTA_USUARIOS_CARPETAS=$4
+
+IFS=$'\n'
 
 
+        echo "--------------------"
+        echo
+        echo "WHOAMI"
+        echo "--------------------"
+
+        #echo "entra"
+#       sudo su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_A1
+#       sudo su -c "whoami > /Examenes-UTN/alumno_2/validar.txt" p1c2_2024_A2
+#       sudo su -c "whoami > /Examenes-UTN/alumno_3/validar.txt" p1c2_2024_A3
+#       sudo su -c "whoami > /Examenes-UTN/profesores/validar.txt" p1c2_2024_P1
+
+
+#for LINEA in `cat $LISTA_USUARIOS_CARPETAS | grep -v ^#`
+        #do
+for LINEA in `cat $LISTA_USUARIOS_CARPETAS | grep -v ^#`
+do
+        #echo "entra2"
+        echo
+        echo "Linea: $LINEA"
+       DIRECTORIO=$(echo $LINEA | awk -F ',' '{print $1}')
+       USUARIO=$(echo $LINEA | awk -F ',' '{print $2}')
+
+        echo
+        echo "--------------------"
+        echo
+
+ #DIRECTORIO,USUARIO
+        echo "directorios creados"
+        #sudo su -c "whoami" > ./probando.txt p1c2_2024_A1
+        echo "esto es una prueba"
+        sudo su -c "whoami > $DIRECTORIO/validar.txt" $USUARIO
+       echo "--------------------"
+done
 
 
 IFS=$ANT_IFS
-
-
-
-
-
-
-
 
 
 

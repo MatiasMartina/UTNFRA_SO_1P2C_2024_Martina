@@ -642,3 +642,46 @@ git status
 git commit -m "ADD: Punto_C2.sh Punto_C2bis.sh Punto_C3.sh Punto_C_Def.sh todo concatenado"
 git push
 ls -la
+ssh-keygen -t ed25519
+sudo apt update
+sudo apt install git -y
+sudo apt install tree -y
+cat .ssh/id_ed25519.pub 
+mkdir repogit
+ls -la
+cd repogit
+git clone git@github.com:MatiasMartina/UTNFRA_SO_1P2C_2024_Martina.git
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+source  ~/.bashrc  && history -a
+cd UTNFRA_SO_1P2C_2024_Martina
+rm -rf RTA_ARCHIVOS_Examen_20241010
+rm -rf RTA_SCRIPT_Examen_202410
+ls -la
+rm -rf RTA_SCRIPT_Examen_20241010
+ls -la
+cd RTA_SCRIPT_Examen_20241007/
+ls -la
+bash Punto_A.sh 
+rm -rf RTA_ARCHIVOS_Examen_20241010LS -LA
+ls -la
+cd repogit/UTNFRA_SO_1P2C_2024_Martina/RTA_SCRIPT_Examen_20241007/
+ls -la
+bash Punto_B.sh sdc
+bash Punto_C_Def.sh ../RTA_ARCHIVOS_Examen_20241008/LISTA_USUARIOS.txt vagrant ../RTA_ARCHIVOS_Examen_20241008/LISTA_PERMISOS.txt ../RTA_ARCHIVOS_Examen_20241008/USUARIOS_CARPETAS.txt 
+bash Punto_D.sh
+bash Punto_E.sh
+bash Punto_F.sh
+vim Punto_C_Def.sh 
+cat Punto_C_Def.sh > Punto_C.sh 
+vim Punto_C.sh 
+ls -la
+rm -rf Punto_C1.sh 
+rm -rf Punto_C2.sh 
+rm -rf Punto_C3.sh 
+rm -rf Punto_C2bis.sh 
+ls -la
+rm -rf Punto_CisBis.sh 
+ls -la
+rm -rf Punto_C_Def.sh 
+ls -la
